@@ -1,16 +1,165 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rinterio</title>
-  <link rel="shortcut icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/growth-arrow-7990085-6476132.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="https://cdn3d.iconscout.com/3d/premium/thumb/growth-arrow-7990085-6476132.png"
+    type="image/x-icon">
+  <!-- remix icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- tailwind & daisyUi cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ABEF5F',
+            navBtn: '#1C1C1C',
+            priLight: '#ABEF5F80',
+            priMoreLight: '#ABEF5F33',
+            bgColor: '#f4f4f4',
+          },
+          fontFamily: {
+            manrope: ['Manrope', 'sans-serif'],
+          },
+          backgroundImage: {
+            contactBg: "url('./assets/bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-  
+  <main class="font-manrope text-[#212121]">
+    <div class="h-[100vh] bg-gradient-to-b from-[#F4f4f4] to-[#FFFFFF]">
+      <!-- header -->
+      <header class="container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+
+            <a class="text-xl cursor-pointer flex items-center gap-1">
+              <i class="ri-arrow-right-up-line rounded-full bg-primary px-1"></i>
+              <span class="text-2xl font-black">Rinterio</span>
+
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end hidden space-x-4 mr-10 md:flex lg:mr-0">
+            <i class="ri-search-line px-2 py-1 rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+            <i
+              class="ri-shopping-cart-line px-2 py-1 rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+            <button class="space-x-1 bg-primary py-2 px-3 rounded-full cursor-pointer">
+              <span class="font-black">Book Consult</span>
+              <i class="ri-arrow-right-up-line rounded-full bg-navBtn text-slate-50 p-1"></i>
+            </button>
+          </div>
+
+          <div class="dropdown absolute right-0">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="ri-menu-line px-2 py-2 rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 right-0 w-52 p-2 shadow">
+              <li><a class="font-bold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- hero -->
+      <section class="w-full h-11/12">
+        <div class="container mx-auto">
+          <div class="hero">
+            <div class="hero-content text-center">
+              <div class="lg:max-w-[80vw] lg:mx-auto">
+                <img src="./assets/banner.png" alt="" class="mx-auto lg:max-w-md">
+                <h1
+                  class="text-[4vmax] lg:text-[4.3vmax] xl:text-[64px] max-w-[1080px] font-black leading-[4.3vmax] lg:leading-[5vmax] xl:leading-[68px]">
+                  A barn house of this design has a striking appearance</h1>
+                <p class="py-6 font-[#494949] max-w-[90vw] lg:max-w-[75vw] xl:max-w-[900px] mx-auto">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                  weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button
+                  class="space-x-1 bg-priLight py-2 px-16 md:px-3 border border-primary rounded-full cursor-pointer">
+                  <span class="font-black">View Details</span>
+                  <i class="ri-arrow-right-up-line rounded-full bg-primary p-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Us -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+
+    <!-- How we work -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+
+    <!-- Explore our Latest works -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+    <!-- Rinterio News -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+    <!-- faq -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+    <!-- Let’s Connect -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="w-full">
+      <div class="container mx-auto">
+
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
