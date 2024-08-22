@@ -43,18 +43,17 @@
   <main class="font-manrope text-[#212121] bg-bgColor">
     <div class="w-full bg-gradient-to-b from-bgColor to-[#FFFFFF]">
       <!-- header -->
-      <header class="container mx-auto">
+      <header class="container max-w-[1080px] mx-auto">
         <div class="navbar">
           <div class="navbar-start">
-
             <a class="text-xl cursor-pointer flex items-center gap-1">
-              <i class="ri-arrow-right-up-line rounded-full bg-primary px-1"></i>
-              <span class="text-2xl font-black">Rinterio</span>
+              <i class="ri-arrow-right-up-line lg:text-xl rounded-full bg-primary px-1"></i>
+              <span class="text-2xl font-black xl:text-3xl">Rinterio</span>
 
             </a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu menu-horizontal px-1 xl:text-lg">
               <li class="font-bold"><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
@@ -63,9 +62,10 @@
             </ul>
           </div>
           <div class="navbar-end hidden space-x-4 mr-10 md:flex lg:mr-0">
-            <i class="ri-search-line px-2 py-1 rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
             <i
-              class="ri-shopping-cart-line px-2 py-1 rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+              class="ri-search-line px-2 py-1 lg:text-lg rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+            <i
+              class="ri-shopping-cart-line px-2 py-1 lg:text-lg rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
             <button class="space-x-1 bg-primary py-2 px-3 rounded-full cursor-pointer">
               <span class="font-black">Book Consult</span>
               <i class="ri-arrow-right-up-line rounded-full bg-navBtn text-slate-50 p-1"></i>
@@ -91,15 +91,15 @@
 
       <!-- hero -->
       <section class="w-full h-11/12">
-        <div class="container mx-auto">
+        <div class="container max-w-[1080px] mx-auto">
           <div class="hero">
             <div class="hero-content text-center">
-              <div class="lg:max-w-[80vw] lg:mx-auto">
-                <img src="./assets/banner.png" alt="" class="mx-auto lg:max-w-md">
+              <div class="lg:max-w-[80vw] lg:mx-auto mb-12">
+                <img src="./assets/banner.png" alt="" class="mx-auto lg:max-w-md mb-3">
                 <h1
                   class="text-[4vmax] lg:text-[4.3vmax] xl:text-[64px] max-w-[1080px] font-black leading-[4.3vmax] lg:leading-[5vmax] xl:leading-[68px]">
                   A barn house of this design has a striking appearance</h1>
-                <p class="py-6 font-[#494949] max-w-[90vw] lg:max-w-[75vw] xl:max-w-[900px] mx-auto">
+                <p class="py-6 font-[#494949] max-w-[90vw] lg:max-w-[75vw] xl:max-w-[900px] mx-auto my-1">
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                   weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
@@ -117,34 +117,69 @@
 
     <!-- About Us -->
     <section class="w-full">
-      <div class="container mx-auto">
-
+      <div class="container max-w-[1080px] mx-auto">
+        <div class="hero my-5 md:p-5 lg:p-1">
+          <div
+            class="hero-content w-full text-center gap-x-0 lg:justify-between lg:text-left flex-col-reverse lg:flex-row-reverse py-14">
+            <div class="w-full lg:max-w-1/2 mx-2">
+              <img src="./assets/Rectangle.png" class="w-full  rounded-xl shadow" />
+            </div>
+            <div class="w-full lg:max-w-1/2 px-2">
+              <p class="space-x-1 mb-2 px-3 py-1 rounded-full bg-white inline-block"><i
+                  class="ri-arrow-right-line"></i><span>About Us</span></p>
+              <h1 class="text-3xl lg:text-4xl font-black">We design thoughtful, liveable spaces</h1>
+              <p class="py-6">The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              <div class="flex text-left flex-col md:flex-row lg:flex-col gap-2">
+                <div class="flex items-start lg:items-center bg-white p-4 rounded-xl">
+                  <img src="./assets/commercial.png" class="w-10 lg:w-fit" alt="">
+                  <div class="mx-4">
+                    <h2 class="text-lg font-black mb-2">Commercial</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <div class="flex items-start lg:items-center bg-white p-4 rounded-xl">
+                  <img src="./assets/residential.png" class="w-10 lg:w-fit" alt="">
+                  <div class="mx-4">
+                    <h2 class="text-lg font-black mb-2">Residential</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- How we work -->
     <section class="w-full">
-      <div class="container mx-auto">
+      <div class="container max-w-[1080px] mx-auto">
 
       </div>
     </section>
 
     <!-- Explore our Latest works -->
     <section class="w-full">
-      <div class="container mx-auto">
+      <div class="container max-w-[1080px] mx-auto">
 
       </div>
     </section>
     <!-- Rinterio News -->
     <section class="w-full">
-      <div class="container mx-auto">
+      <div class="container max-w-[1080px] mx-auto">
 
       </div>
     </section>
     <!-- faq -->
     <section class="w-full py-10">
-      <div class="container mx-auto space-y-3 p-1 md:px-3 lg:px-8">
-        <h1 class="text-2xl md:text-5xl font-bold text-center">Frequently Asked Questions</h1>
+      <div class="container max-w-[1080px] mx-auto space-y-3 p-1 md:px-3 lg:px-8">
+       <div class="mx-auto max-w-24">
+        <p class="space-x-1 mb-2 px-3 py-1 rounded-full bg-white inline-blockblock"><i
+          class="ri-arrow-right-line"></i><span>FAQs</span></p>
+       </div>
+        <h1 class="text-2xl md:text-5xl font-black text-center">Frequently Asked Questions</h1>
         <div class="collapse collapse-plus bg-white">
           <input type="radio" name="my-accordion-3" checked="checked" />
           <div class="collapse-title text-xl font-medium">What types of housing do you offer?</div>
@@ -194,13 +229,13 @@
     </section>
     <!-- Let’s Connect -->
     <section class="w-full">
-      <div class="container mx-auto">
+      <div class="container max-w-[1080px] mx-auto">
 
       </div>
     </section>
     <!-- Footer -->
     <section class="w-full bg-navBtn my-0">
-      <div class="container mx-auto">
+      <div class="container max-w-[1080px] mx-auto">
         <footer class="footer footer-center text-base-content rounded p-10">
           <h1>
             <a class="text-xl cursor-pointer flex items-center gap-x-1">
@@ -209,15 +244,16 @@
             </a>
           </h1>
           <p class="text-[#737373] max-w-xl">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents.
           </p>
           <nav class="text-[#E9E9E9]">
             <ul class="flex flex-col md:flex-row justify-center gap-8 lg:gap-16 px-1">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a class="cursor-pointer">Home</a></li>
+              <li><a class="cursor-pointer">Services</a></li>
+              <li><a class="cursor-pointer">Portfolio</a></li>
+              <li><a class="cursor-pointer">Blogs</a></li>
+              <li><a class="cursor-pointer">Contact Us</a></li>
             </ul>
           </nav>
           <aside>
