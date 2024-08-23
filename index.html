@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -40,25 +40,25 @@
 </head>
 
 <body>
-  <main class="font-manrope text-[#212121] bg-bgColor">
-    <div class="w-full bg-gradient-to-b from-bgColor to-[#FFFFFF]">
-      <!-- header -->
+  <main id="home" class="font-manrope text-[#212121] bg-bgColor">
+    <!-- header -->
+    <div class="w-full backdrop-blur-sm sticky top-0 z-[2]">
       <header class="container max-w-[1080px] mx-auto">
         <div class="navbar">
           <div class="navbar-start">
-            <a class="text-xl cursor-pointer flex items-center gap-1">
+            <a href="#home" class="text-xl cursor-pointer flex items-center gap-1">
               <i class="ri-arrow-right-up-line lg:text-xl rounded-full bg-primary px-1"></i>
               <span class="text-2xl font-black xl:text-3xl">Rinterio</span>
-
+  
             </a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 xl:text-lg">
-              <li class="font-bold"><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li class="font-bold"><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end hidden space-x-2 mr-12 md:flex lg:mr-0">
@@ -71,26 +71,41 @@
               <i class="ri-arrow-right-up-line rounded-full bg-navBtn text-slate-50 p-1"></i>
             </button>
           </div>
-
+  
           <div class="dropdown absolute right-0">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <i class="ri-menu-line px-2 py-2 rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
             </div>
             <ul tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 right-0 w-52 p-2 shadow">
-              <li><a class="font-bold">Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li class="font-bold"><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+              <div class="pt-10 flex flex-col md:hidden gap-5">
+                <div class="flex gap-5">
+                  <i
+                    class="ri-search-line px-[10px] py-1 lg:text-lg rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+                  <i
+                    class="ri-shopping-cart-line px-[10px] py-1 lg:text-lg rounded-full bg-[white] border border-[#E9E9E9] cursor-pointer"></i>
+                </div>
+                <button class="space-x-1 bg-primary py-2 px-3 rounded-full cursor-pointer">
+                  <span class="font-black">Book Consult</span>
+                  <i class="ri-arrow-right-up-line rounded-full bg-navBtn text-slate-50 p-1"></i>
+                </button>
+              </div>
             </ul>
           </div>
-
+  
         </div>
       </header>
+    </div>
+    <div class="w-full bg-gradient-to-b from-bgColor to-[#FFFFFF]">
+
 
       <!-- hero -->
-      <section class="w-full h-11/12">
+      <section class="w-full h-11/12 pb-4">
         <div class="container max-w-[1080px] mx-auto">
           <div class="hero">
             <div class="hero-content text-center">
@@ -116,8 +131,8 @@
     </div>
 
     <!-- About Us -->
-    <section class="w-full">
-      <div class="container max-w-[1080px] mx-auto">
+    <section id="services" class="w-full">
+      <div class="container max-w-[1080px] mx-auto pt-4 lg:pt-14">
         <div class="hero my-5 md:p-5 lg:p-1">
           <div
             class="hero-content w-full text-center gap-x-0 lg:justify-between lg:text-left flex-col-reverse lg:flex-row-reverse py-14">
@@ -129,22 +144,25 @@
               <p class="space-x-1 mb-2 px-3 py-1 rounded-full bg-white inline-block"><i
                   class="ri-arrow-right-line"></i><span>About Us</span></p>
               <h1 class="text-3xl lg:text-4xl font-black">We design thoughtful, liveable spaces</h1>
-              <p class="py-6">We design both commercial and residential spaces with careful attention, ensuring each is
-                functional, aesthetically pleasing, and comfortable for daily living and work.
+              <p class="py-6 text-sm">We carefully design both commercial and residential spaces, ensuring each is
+                highly functional, aesthetically pleasing, and comfortable for everyday living, efficient work, and
+                lasting enjoyment.
               </p>
-              <div class="flex text-left flex-col md:flex-row lg:flex-col gap-6 mb-3 lg:mb-0">
-                <div class="flex items-start lg:items-center bg-white p-4 rounded-xl">
+              <div class="flex text-left flex-col md:flex-row lg:flex-col gap-8 mb-3 lg:mb-0">
+                <div class="flex items-start lg:items-center bg-white p-5 rounded-xl">
                   <img src="./assets/commercial.png" class="w-10 lg:w-fit" alt="">
                   <div class="mx-4">
                     <h2 class="text-lg font-black mb-2">Commercial</h2>
-                    <p>We create functional, well-designed commercial spaces that enhance business operations.</p>
+                    <p class=" text-[#737373] text-sm">We create functional, well-designed commercial spaces that
+                      enhance business operations.</p>
                   </div>
                 </div>
-                <div class="flex items-start lg:items-center bg-white p-4 rounded-xl">
+                <div class="flex items-start lg:items-center bg-white p-5 rounded-xl">
                   <img src="./assets/residential.png" class="w-10 lg:w-fit" alt="">
                   <div class="mx-4">
                     <h2 class="text-lg font-black mb-2">Residential</h2>
-                    <p>We create well-designed, comfortable residential spaces that enhance daily living.</p>
+                    <p class=" text-[#737373] text-sm">We create well-designed, comfortable residential spaces that
+                      enhance daily living.</p>
                   </div>
                 </div>
               </div>
@@ -155,22 +173,22 @@
       <div class="container max-w-[1080px] px-4 mx-auto mb-16">
         <div class="bg-white rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center">
           <div class="stat text-center my-4">
-            <div class="text-3xl"><i class="ri-message-2-line"></i></div>
+            <div class="text-3xl text-slate-600"><i class="ri-message-2-line"></i></div>
             <div class="text-4xl font-bold text-gray-600 my-2">235+</div>
             <div class="font-normal text-sm">Happy Client Review</div>
           </div>
           <div class="stat text-center my-4">
-            <div class="text-3xl"><i class="ri-building-4-line"></i></div>
+            <div class="text-3xl text-slate-600"><i class="ri-building-4-line"></i></div>
             <div class="text-4xl font-bold text-gray-600 my-2">50+</div>
             <div class="font-normal text-sm">Work Departments</div>
           </div>
           <div class="stat text-center my-4">
-            <div class="text-3xl"><i class="ri-team-line"></i></div>
+            <div class="text-3xl text-slate-600"><i class="ri-team-line"></i></div>
             <div class="text-4xl font-bold text-gray-600 my-2">30k+</div>
             <div class="font-normal text-sm">Our Happy Client</div>
           </div>
           <div class="stat text-center my-4">
-            <div class="text-3xl"><i class="ri-group-line"></i></div>
+            <div class="text-3xl text-slate-600"><i class="ri-group-line"></i></div>
             <div class="text-4xl font-bold text-gray-600 my-2">307+</div>
             <div class="font-normal text-sm">Staff Members</div>
           </div>
@@ -192,13 +210,13 @@
             execution.</p>
         </div>
         <div class="rounded-xl text-sm grid grid-cols-1 md:grid-cols-2 gap-4 p-4 lg:grid-cols-4 items-center">
-          <div class="flex flex-col h-60 items-start rounded-xl p-6 bg-[#e7c1d3]">
+          <div class="flex flex-col h-fit md:h-60 items-start rounded-xl p-6 bg-[#e7c1d3]">
             <img src="./assets/concept.png" class="" alt="">
             <h2 class="text-xl font-bold my-2">Concept</h2>
             <p>
               We develop initial ideas and themes tailored to your needs, setting the vision for the project. </p>
           </div>
-          <div class="flex flex-col h-60 items-start rounded-xl p-6 bg-[#efda6e]">
+          <div class="flex flex-col h-fit md:h-60 items-start rounded-xl p-6 bg-[#efda6e]">
             <img src="./assets/flow-chart.png" class="" alt="">
             <h2 class="text-xl font-bold my-2">Design Process</h2>
             <p>
@@ -206,14 +224,14 @@
               design elements.
             </p>
           </div>
-          <div class="flex flex-col h-60 items-start rounded-xl p-6 bg-[#a4dac3]">
+          <div class="flex flex-col h-fit md:h-60 items-start rounded-xl p-6 bg-[#a4dac3]">
             <img src="./assets/vision.png" class="" alt="">
             <h2 class="text-xl font-bold my-2">Supervision</h2>
             <p>We oversee the implementation to ensure design accuracy, quality, and adherence to the project’s
               specifications.
             </p>
           </div>
-          <div class="flex flex-col h-60 items-start rounded-xl p-6 bg-[#77aaea]">
+          <div class="flex flex-col h-fit md:h-60 items-start rounded-xl p-6 bg-[#77aaea]">
             <img src="./assets/budget-planning.png" class="" alt="">
             <h2 class="text-xl font-bold my-2">Budget Planning</h2>
             <p>We estimate costs, allocate resources, and manage expenses to keep the project within the planned budget.
@@ -224,8 +242,8 @@
     </section>
 
     <!-- Explore our Latest works -->
-    <section class="w-full bg-white py-16">
-      <div class="container max-w-[1080px] mx-auto">
+    <section id="portfolio" class="w-full lg:bg-white py-16">
+      <div class="container max-w-[1080px] mx-auto pt-3">
         <div>
           <div class="mx-auto w-fit">
             <p class="space-x-1 mb-2 px-3 py-1 rounded-full bg-priMoreLight inline-block"><i
@@ -238,10 +256,70 @@
               beautifully.</p>
           </div>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 lg:grid-cols-8">
+          <div
+            class="col-span-1 md:col-span-2 lg:col-span-5 order-1 lg:order-1 p-4 bg-white border border-[#E9E9E9] rounded-xl">
+
+
+            <div class="w-full h-full bg-white rounded-2xl gap-4 flex flex-col md:flex-row">
+              <img class="md:h-full" src="./assets/img1.png" alt="">
+              <div class="space-y-3 py-1 flex flex-col justify-between items-start">
+                <h2 class="font-bold text-xl">Residential</h2>
+                <p class=" text-[#737373] text-sm">Our latest portfolio showcases innovative residential designs that
+                  expertly transform living spaces, blending creativity with functionality for stunning results.
+                </p>
+                <button>
+                  <span class="font-black">Read More</span>
+                  <i class="ri-arrow-right-up-line rounded-full bg-primary p-1"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div
+            class="col-span-1 h-full md:h-52 lg:h-full md:col-span-1 lg:col-span-3 order-2 lg:order-2 p-4 bg-white border border-[#E9E9E9] rounded-xl">
+            <img class="w-full h-full" src="./assets/img2.png" alt="">
+          </div>
+          <div
+            class="col-span-1 h-full md:h-52 lg:h-full md:col-span-1 lg:hidden p-4 order-3 lg:order-2 bg-white border border-[#E9E9E9] rounded-xl">
+            <img class="w-full h-full" src="./assets/img5.png" alt="">
+          </div>
+          <div
+            class="col-span-1 md:col-span-2 lg:col-span-4 order-4 lg:order-5 p-4 bg-white border border-[#E9E9E9] rounded-xl">
+
+
+            <div class="w-full h-full bg-white rounded-2xl gap-4 flex flex-col md:flex-row">
+              <img class="md:h-full" src="./assets/img4.png" alt="">
+              <div class="space-y-3 py-1 flex flex-col justify-between items-start">
+                <h2 class="font-bold text-xl">Commercial</h2>
+                <p class=" text-[#737373] text-sm">Our portfolio highlights creative commercial designs that transform
+                  diverse workspaces effectively.</p>
+                <button>
+                  <span class="font-black">Read More</span>
+                  <i class="ri-arrow-right-up-line rounded-full bg-primary p-1"></i>
+                </button>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div
+            class="col-span-1 h-full md:h-52 lg:h-full md:col-span-1 lg:col-span-2 order-5 lg:order-4 p-4 bg-white border border-[#E9E9E9] rounded-xl">
+            <img class="w-full h-full" src="./assets/img3.png" alt="">
+          </div>
+          <div
+            class="col-span-1 h-full md:h-52 lg:h-full md:col-span-1 lg:col-span-2 order-6 lg:order-6 p-4 bg-white border border-[#E9E9E9] rounded-xl">
+            <img class="w-full h-full" src="./assets/img5.png" alt="">
+          </div>
+
+        </div>
+      </div>
     </section>
     <!-- Rinterio News -->
-    <section class="w-full py-16">
-      <div class="container max-w-[1080px] mx-auto">
+    <section id="blogs" class="w-full py-16">
+      <div class="container max-w-[1080px] mx-auto pt-3">
         <div>
           <div class="mx-auto w-fit">
             <p class="space-x-1 mb-2 px-3 py-1 rounded-full bg-priMoreLight inline-block"><i
@@ -267,8 +345,10 @@
                 </div>
 
               </div>
-              <h2 class="font-bold text-lg max-w-[250px] md:max-w-[400px] lg:max-w-[250px]">How to choose the furniture right of your home.</h2>
-              <p class=" text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+              <h2 class="font-bold text-lg max-w-[250px] md:max-w-[400px] lg:max-w-[250px]">How to choose the furniture
+                right of your home?</h2>
+              <p class=" text-[#737373] text-sm">Choosing the right furniture balances style, functionality, and comfort
+                to enhance your home’s design and usability.</p>
               <button>
                 <span class="font-black">Read More</span>
                 <i class="ri-arrow-right-up-line rounded-full bg-primary p-1"></i>
@@ -281,15 +361,17 @@
             <div class="space-y-3">
               <div class="flex space-x-3 my-2 font-light text-xs">
                 <div class="space-x-1">
-                  <i class="ri-calendar-2-line text-sm"></i><span>July 14, 2024</span>
+                  <i class="ri-calendar-2-line text-sm"></i><span>July 19, 2024</span>
                 </div>
                 <div class="space-x-1">
                   <i class="ri-account-circle-line text-sm"></i><span>By Admin</span>
                 </div>
 
               </div>
-              <h2 class="font-bold text-lg max-w-[250px] md:max-w-[400px] lg:max-w-[250px]">How to choose the furniture right of your home.</h2>
-              <p class=" text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+              <h2 class="font-bold text-lg max-w-[250px] md:max-w-[400px] lg:max-w-[250px]">Trends Shaping Tomorrow’s
+                Workspaces.</h2>
+              <p class=" text-[#737373] text-sm">Explore the latest trends in commercial interior design, enhancing
+                productivity and creating inspiring work environments.</p>
               <button>
                 <span class="font-black">Read More</span>
                 <i class="ri-arrow-right-up-line rounded-full bg-primary p-1"></i>
@@ -302,15 +384,17 @@
             <div class="space-y-3">
               <div class="flex space-x-3 my-2 font-light text-xs">
                 <div class="space-x-1">
-                  <i class="ri-calendar-2-line text-sm"></i><span>July 14, 2024</span>
+                  <i class="ri-calendar-2-line text-sm"></i><span>July 27, 2024</span>
                 </div>
                 <div class="space-x-1">
                   <i class="ri-account-circle-line text-sm"></i><span>By Admin</span>
                 </div>
 
               </div>
-              <h2 class="font-bold text-lg max-w-[250px] md:max-w-[400px] lg:max-w-[250px]">How to choose the furniture right of your home.</h2>
-              <p class=" text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+              <h2 class="font-bold text-lg max-w-[250px] md:max-w-[400px] lg:max-w-[250px]">Innovative Solutions for
+                Modern Living Spaces.</h2>
+              <p class=" text-[#737373] text-sm">We blend style and functionality to create contemporary living spaces
+                that are both beautifully designed and practical.</p>
               <button>
                 <span class="font-black">Read More</span>
                 <i class="ri-arrow-right-up-line rounded-full bg-primary p-1"></i>
@@ -401,7 +485,7 @@
 
 
     <!-- Let’s Connect -->
-    <section class="w-full bg-white p-1 md:p-2">
+    <section id="contact-us" class="w-full bg-white p-1 md:p-2">
       <div class="bg-contactBg bg-no-repeat bg-cover bg-center">
         <div class="container max-w-[880px] mx-auto py-20">
           <div class="mx-auto w-fit">
@@ -410,9 +494,8 @@
           </div>
           <div class="pb-2 lg:pb-4">
             <h1 class="text-2xl my-3 md:text-5xl font-black text-center">Let’s Discuss Next Project</h1>
-            <p class="text-center w-[86vw] max-w-[700px] mx-auto">The barn house captivates with its blend of
-              rustic charm and modern sophistication,
-              featuring weathered wood, sleek metal accents.</p>
+            <p class="text-center w-[86vw] max-w-[700px] mx-auto">Let’s delve deep into your upcoming interior design
+              project and bring your vision to life with style, functionality, and creativity.</p>
           </div>
           <div class="p-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -460,7 +543,7 @@
             </ul>
           </nav>
           <aside>
-            <button class="space-x-1 bg-primary py-2 px-3 rounded-full cursor-pointer">
+            <button class="space-x-1 bg-primary py-3 px-12 md:px-5 rounded-full cursor-pointer">
               <span class="font-black">Book Consult</span>
               <i class="ri-arrow-right-up-line rounded-full bg-navBtn text-slate-50 p-1"></i>
             </button>
